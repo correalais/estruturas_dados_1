@@ -33,26 +33,27 @@ def cadastroDeLixadeira():
 
 
 def menu():
-      print( f"""\n\n                   MENU  
-                    ----------------------------------
-                    1. Cadastrar Furadeira
-                    2. Cadastrar Lixadeira
-                    3. Sair          
-                    ----------------------------------
-                    """)
+    print( f"""\n\n                   MENU  
+                ----------------------------------
+                1. Cadastrar Furadeira
+                2. Cadastrar Lixadeira
+                3. Sair          
+                ----------------------------------
+                """)
 
-def escolhas():
     escolha = input (f"Digite a opção que deseja: """)
     if escolha == '1':
-       cadastroDeFuradeira()
+        cadastroDeFuradeira()
+        return True
     if escolha == '2':
-       cadastroDeLixadeira()
+        cadastroDeLixadeira()
+        return True
     else:
         return False
 
 
 while True:
-    menu()
-    if escolhas() == False: 
+
+    if menu() == False: 
         print (f'\nVocê escolheu finalizar.') 
         break
