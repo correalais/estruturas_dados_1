@@ -12,5 +12,5 @@ class Ferramenta(metaclass=ABCMeta):
         pass
 
     def getInformacoes(self):
-        return f'Nome da ferramenta: {self.nome}\nTensao: {self.tensao}\nPreco: {self.preco}'
+        return f'Nome da ferramenta: {self.nome}\nTensão: {self.tensao}\nPreço: {self.preco}'
 
