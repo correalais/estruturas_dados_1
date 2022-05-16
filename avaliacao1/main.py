@@ -9,7 +9,7 @@ def cadastroDeFuradeira():
     nome = input('Digite o nome da Furadeira: ')
     tensao = input('Digite a tensão da Furadeira: ')
     preco = float(input('Digite o preço da Furadeira: '))
-    potencia = input('Digite a potencia da Furadeira: ')
+    potencia = input('Digite a potência da Furadeira: ')
 
     furadeira.cadastrar(nome, tensao, preco, potencia)
     print('\nAs informações foram cadastradas.\n')
