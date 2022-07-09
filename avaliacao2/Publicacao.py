@@ -4,4 +4,4 @@ class Publicacao:
         self.dataPubli = dataPubli
 
     def imprimeInformacoes(self):
-        return f'\nID: {self.id} \nData: {self.dataPubli}'
+        return f'\nID: {self.id} \nData de publicação: {self.dataPubli}'
