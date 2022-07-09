@@ -17,7 +17,7 @@ class Pilha:
 	
 	def imprimirPilha(self) :
 		if self.topoDaPilha == None:
-			print('\nA Pilha está vazia.\n')
+			print('\nA Pilha está vazia. Adicione elementos!\n')
 		else:
 			aux = self.topoDaPilha
 			while(aux != None) :
@@ -27,7 +27,7 @@ class Pilha:
 	
 	def removerDaPilha(self):
 		if self.topoDaPilha == None:
-			print('\nA Pilha está vazia.\n')
+			print('\nA Pilha está vazia. Adicione elementos antes de remover!\n')
 		elif self.topoDaPilha.proximo == None:
 			self.topoDaPilha = None
 			self.tamanho = 0

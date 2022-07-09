@@ -26,20 +26,26 @@ def adicionaRevista():
 
 
 def removerLivros():
+    if pilhaLivros.tamanho > 0:
+        print('\nO livro que era topo da pilha foi removido.')
     pilhaLivros.removerDaPilha()
-    print('\nO livro que era topo da pilha foi removido.')
+
 
 def imprimeLivros():
-    print('Livros cadastrados: \n')
+    if pilhaLivros.tamanho > 0: 
+        print('Livros cadastrados: \n')
     pilhaLivros.imprimirPilha()
 
 def imprimeRevistas():
-    print('Revistas cadastradas: \n')
+    if pilhaRevistas.tamanho > 0:
+        print('Revistas cadastradas: \n')
     pilhaRevistas.imprimirPilha()
 
 def removerRevistas():
+    if pilhaRevistas.tamanho > 0:
+        print('\nA revista que era topo da pilha foi removida.')
     pilhaRevistas.removerDaPilha()
-    print('\nA revista que era topo da pilha foi removida.')
+    
 
 def menu():
     while True:
